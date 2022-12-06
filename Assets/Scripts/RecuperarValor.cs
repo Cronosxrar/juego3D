@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class RecuperarValor : MonoBehaviour
 {
-    public short puntos = 400;
+    public Text txtPuntos;
     // Start is called before the first frame update
     void Start()
     {
-        
+        txtPuntos.text=GameController.puntos.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameController.puntos=puntos;
+        
     }
 }
-
